@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#888" />
+
+    <com.lzy.ui.AlphaIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <com.lzy.ui.AlphaView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@mipmap/community"
+            app:tabIconSelected="@mipmap/community_on"
+            app:tabText="首页"
+            app:tabTextSize="14sp"
+            app:textColorNormal="#484848"
+            app:textColorSelected="#F1A100" />
+
+        <com.lzy.ui.AlphaView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@mipmap/talk"
+            app:tabIconSelected="@mipmap/talk_on"
+            app:tabText="指示控件"
+            app:tabTextSize="14sp"
+            app:textColorNormal="#484848"
+            app:textColorSelected="#F1A100" />
+
+        <com.lzy.ui.AlphaView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@mipmap/shopping"
+            app:tabIconSelected="@mipmap/shopping_on"
+            app:tabText="UI特效"
+            app:tabTextSize="14sp"
+            app:textColorNormal="#484848"
+            app:textColorSelected="#F1A100" />
+
+        <com.lzy.ui.AlphaView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@mipmap/wo"
+            app:tabIconSelected="@mipmap/wo_on"
+            app:tabText="条目效果"
+            app:tabTextSize="14sp"
+            app:textColorNormal="#484848"
+            app:textColorSelected="#F1A100" />
+    </com.lzy.ui.AlphaIndicator>
+</LinearLayout>
