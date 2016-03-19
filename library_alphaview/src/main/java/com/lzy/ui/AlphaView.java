@@ -26,8 +26,8 @@ public class AlphaView extends View {
     private Bitmap mIconNormal;                   //默认图标
     private Bitmap mIconSelected;                 //选中的图标
     private String mText;                         //描述文本
-    private int mTextColorNormal = 0xFF484848;    //描述文本的默认显示颜色
-    private int mTextColorSelected = 0xFFF1A100;  //述文本的默认选中显示颜色
+    private int mTextColorNormal = 0xFF999999;    //描述文本的默认显示颜色
+    private int mTextColorSelected = 0xFF46C01B;  //述文本的默认选中显示颜色
     private int mTextSize = 12;                   //描述文本的默认字体大小 12sp
     private int padding = 5;                      //文字和图片之间的距离 5dp
 
