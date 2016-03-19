@@ -2,18 +2,17 @@ package com.lzy.alphaindicatorview;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.Window;
+import android.support.v7.app.AppCompatActivity;
 
 import com.lzy.ui.AlphaIndicator;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +28,11 @@ public class MainActivity extends FragmentActivity {
     private class MainAdapter extends FragmentPagerAdapter {
 
         private List<Fragment> fragments = new ArrayList<>();
-        private String[] titles = {"第一页", "第二页", "第三页", "第四页"};
+        private String[] titles = {//
+                "第一页\n\n重点看下面的的图标是渐变色，随着滑动距离的增加，颜色逐渐过度",//
+                "第二页\n\n重点看下面的的图标是渐变色，随着滑动距离的增加，颜色逐渐过度",//
+                "第三页\n\n重点看下面的的图标是渐变色，随着滑动距离的增加，颜色逐渐过度", //
+                "第四页\n\n重点看下面的的图标是渐变色，随着滑动距离的增加，颜色逐渐过度"};
 
         public MainAdapter(FragmentManager fm) {
             super(fm);
