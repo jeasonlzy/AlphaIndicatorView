@@ -6,6 +6,16 @@
 ## 演示
  ![image](https://github.com/jeasonlzy0216/AlphaIndicatorView/blob/master/screenshots/demo1.gif)![image](https://github.com/jeasonlzy0216/AlphaIndicatorView/blob/master/screenshots/demo2.png)![image](https://github.com/jeasonlzy0216/AlphaIndicatorView/blob/master/screenshots/demo3.png)
 
+## 1.用法
+使用前，对于Android Studio的用户，可以选择添加:
+```java
+	compile 'com.lzy.widget:view-core:0.1.4'
+```
+或者使用
+```java
+    compile project(':alphaview')
+```
+
 ## 注意事项
 该项目可以自动判断每一个Tab中的View，是否具有图标和文字，允许出现以下三种情况：
  * 自定义属性只设置了 tabText ，表示只有文字，滑动时文字颜色渐变过度
