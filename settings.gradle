@@ -1,1 +1,1 @@
-include ':app', ':library_alphaview'
+include ':app', ':alphaview'

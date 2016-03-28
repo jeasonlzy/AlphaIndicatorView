@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import com.lzy.ui.AlphaIndicator;
+import com.lzy.widget.AlphaIndicator;
 
 import java.util.ArrayList;
 import java.util.List;

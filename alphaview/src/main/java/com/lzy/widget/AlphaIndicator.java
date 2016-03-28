@@ -1,4 +1,4 @@
-package com.lzy.ui;
+package com.lzy.widget;
 
 import android.content.Context;
 import android.os.Bundle;

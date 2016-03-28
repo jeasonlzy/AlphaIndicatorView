@@ -1,4 +1,4 @@
-package com.lzy.ui;
+package com.lzy.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -55,18 +55,18 @@ public class AlphaView extends View {
 
         //获取所有的自定义属性
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.AlphaView);
-        BitmapDrawable iconNormal = (BitmapDrawable) a.getDrawable(R.styleable.AlphaView_tabIconNormal);
+        BitmapDrawable iconNormal = (BitmapDrawable) a.getDrawable(R.styleable.AlphaView_av_tabIconNormal);
         if (iconNormal != null) {
             mIconNormal = iconNormal.getBitmap();
         }
-        BitmapDrawable iconSelected = (BitmapDrawable) a.getDrawable(R.styleable.AlphaView_tabIconSelected);
+        BitmapDrawable iconSelected = (BitmapDrawable) a.getDrawable(R.styleable.AlphaView_av_tabIconSelected);
         if (iconSelected != null) {
             mIconSelected = iconSelected.getBitmap();
         }
-        mText = a.getString(R.styleable.AlphaView_tabText);
-        mTextSize = a.getDimensionPixelSize(R.styleable.AlphaView_tabTextSize, mTextSize);
-        mTextColorNormal = a.getColor(R.styleable.AlphaView_textColorNormal, mTextColorNormal);
-        mTextColorSelected = a.getColor(R.styleable.AlphaView_textColorSelected, mTextColorSelected);
+        mText = a.getString(R.styleable.AlphaView_av_tabText);
+        mTextSize = a.getDimensionPixelSize(R.styleable.AlphaView_av_tabTextSize, mTextSize);
+        mTextColorNormal = a.getColor(R.styleable.AlphaView_av_textColorNormal, mTextColorNormal);
+        mTextColorSelected = a.getColor(R.styleable.AlphaView_av_textColorSelected, mTextColorSelected);
         a.recycle();
 
         initText();
