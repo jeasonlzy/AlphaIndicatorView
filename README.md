@@ -7,7 +7,7 @@
  ![image](https://github.com/jeasonlzy0216/AlphaIndicatorView/blob/master/screenshots/demo1.gif)![image](https://github.com/jeasonlzy0216/AlphaIndicatorView/blob/master/screenshots/demo2.png)![image](https://github.com/jeasonlzy0216/AlphaIndicatorView/blob/master/screenshots/demo3.png)
 
 ## 1.用法
-使用前，对于Android Studio的用户，可以选择添加:
+该项目和我github上其他的view相关的项目已经一起打包上传到jCenter仓库中（源码地址 [https://github.com/jeasonlzy0216/ViewCore](https://github.com/jeasonlzy0216/ViewCore) ），使用的时候可以直接使用compile依赖，用法如下
 ```java
 	compile 'com.lzy.widget:view-core:0.1.4'
 ```
@@ -91,60 +91,60 @@
         android:layout_height="1px"
         android:background="#888"/>
 
-    <com.lzy.ui.AlphaIndicator
+    <com.lzy.widget.AlphaIndicator
         android:id="@+id/alphaIndicator"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:orientation="horizontal">
 
-        <com.lzy.ui.AlphaView
+        <com.lzy.widget.AlphaView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="5dp"
-            app:tabIconNormal="@mipmap/home_normal"
-            app:tabIconSelected="@mipmap/home_selected"
-            app:tabText="微信"
-            app:tabTextSize="14sp"
-            app:textColorNormal="#999999"
-            app:textColorSelected="#46c01b"/>
+            app:av_tabIconNormal="@mipmap/home_normal"
+            app:av_tabIconSelected="@mipmap/home_selected"
+            app:av_tabText="微信"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#46c01b"/>
 
-        <com.lzy.ui.AlphaView
+        <com.lzy.widget.AlphaView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="5dp"
-            app:tabIconNormal="@mipmap/category_normal"
-            app:tabIconSelected="@mipmap/category_selected"
-            app:tabText="通讯录"
-            app:tabTextSize="14sp"
-            app:textColorNormal="#999999"
-            app:textColorSelected="#46c01b"/>
+            app:av_tabIconNormal="@mipmap/category_normal"
+            app:av_tabIconSelected="@mipmap/category_selected"
+            app:av_tabText="通讯录"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#46c01b"/>
 
-        <com.lzy.ui.AlphaView
+        <com.lzy.widget.AlphaView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="5dp"
-            app:tabIconNormal="@mipmap/service_normal"
-            app:tabIconSelected="@mipmap/service_selected"
-            app:tabText="发现"
-            app:tabTextSize="14sp"
-            app:textColorNormal="#999999"
-            app:textColorSelected="#46c01b"/>
+            app:av_tabIconNormal="@mipmap/service_normal"
+            app:av_tabIconSelected="@mipmap/service_selected"
+            app:av_tabText="发现"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#46c01b"/>
 
-        <com.lzy.ui.AlphaView
+        <com.lzy.widget.AlphaView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="5dp"
-            app:tabIconNormal="@mipmap/mine_normal"
-            app:tabIconSelected="@mipmap/mine_selected"
-            app:tabText="我"
-            app:tabTextSize="14sp"
-            app:textColorNormal="#999999"
-            app:textColorSelected="#46c01b"/>
-    </com.lzy.ui.AlphaIndicator>
+            app:av_tabIconNormal="@mipmap/mine_normal"
+            app:av_tabIconSelected="@mipmap/mine_selected"
+            app:av_tabText="我"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#46c01b"/>
+    </com.lzy.widget.AlphaIndicator>
 </LinearLayout>
 	
 ```
